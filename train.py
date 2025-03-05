@@ -376,7 +376,7 @@ def training(dataset, opt, pipe, exp_name, test_freq, saving_iterations, checkpo
 
             # Log and save
             if not pipe.debug:
-                training_report_wandb(wandb, iteration, recon_loss, erank_loss, thin_loss, opacity_mask_loss, loss, erank, volume, opacity, ordered_scale_multiple, iter_start.elapsed_time(iter_end), test_freq, scene, render, (pipe, background), first_iter)
+                training_report_wandb(wandb, iteration, recon_loss, erank_loss, thin_loss, loss, erank, volume, opacity, ordered_scale_multiple, iter_start.elapsed_time(iter_end), test_freq, scene, render, (pipe, background), first_iter)
             if (iteration in saving_iterations):
                 print("\n[ITER {}] Saving Gaussians".format(iteration))
                 scene.save(iteration)
@@ -431,9 +431,9 @@ def prepare_output_and_logger(args, opt, data_name, debug=False):
 
     return
 
-def training_report_wandb(wandb, iteration, recon_loss, erank_loss, thin_loss, opacity_mask_loss, loss, erank, volume, opacity, ordered_scale_multiple, elapsed, test_freq, scene : Scene, renderFunc, renderArgs, first_iter):
+def training_report_wandb(wandb, iteration, recon_loss, erank_loss, thin_loss, loss, erank, volume, opacity, ordered_scale_multiple, elapsed, test_freq, scene : Scene, renderFunc, renderArgs, first_iter):
 
-    log_dict = {"total_loss": loss, "recon_loss": recon_loss, "erank_loss": erank_loss, "thin_loss": thin_loss, "opacity_mask_loss": opacity_mask_loss, "elapsed": elapsed, "erank_avg": torch.mean(erank).item()}
+    log_dict = {"total_loss": loss, "recon_loss": recon_loss, "erank_loss": erank_loss, "thin_loss": thin_loss, "elapsed": elapsed, "erank_avg": torch.mean(erank).item()}
     log_dict['total_points'] = scene.gaussians.get_xyz.shape[0]
     if iteration % 10 == 0:
         wandb.log(log_dict, step=iteration)

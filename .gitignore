@@ -1,2 +1,5 @@
+output
 __pycache__/
-
+*.pyc
+wandb
+dtu_eval/Offical_DTU_Dataset
