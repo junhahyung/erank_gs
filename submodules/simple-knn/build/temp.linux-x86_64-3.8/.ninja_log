@@ -1,0 +1,4 @@
+# ninja log v5
+34	33412	1711124120824371771	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-3.8/ext.o	580ebd9e388a79d8
+34	72177	1711124159606086893	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-3.8/simple_knn.o	850d847bd4c39843
+33	278666	1711124366031893317	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-3.8/spatial.o	29f78f7dd600e7ec

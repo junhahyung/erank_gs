@@ -1,0 +1,6 @@
+# ninja log v5
+121	44484	1715431771645260504	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/diff-gaussian-rasterization2/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/forward.o	2d65dc7bc52a2f14
+120	44607	1715431771900265267	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/diff-gaussian-rasterization2/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/backward.o	bf9e57e640045478
+121	74984	1715431802293832958	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/diff-gaussian-rasterization2/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/rasterizer_impl.o	1f117b21c15acdaa
+122	275656	1715432002962581300	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/diff-gaussian-rasterization2/build/temp.linux-x86_64-cpython-38/ext.o	9500273c9464ef
+122	809553	1715432536832562489	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/diff-gaussian-rasterization2/build/temp.linux-x86_64-cpython-38/rasterize_points.o	b0dd4d091bc265e3

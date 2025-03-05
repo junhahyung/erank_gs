@@ -1,0 +1,4 @@
+# ninja log v5
+0	25748	1709309530353977185	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-cpython-39/ext.o	f53417d54f5b3bff
+0	64958	1709309569543701644	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-cpython-39/simple_knn.o	ef6e5bed926ad7f8
+1	226757	1709309731326692351	/mnt/image-net-full/j1nhwa.kim/interns/junha.hyung/SuGaR/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-cpython-39/spatial.o	ff02f5a587609a66
