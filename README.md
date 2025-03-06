@@ -26,7 +26,7 @@ bash train.sh
 ```
 
 ## Work in Progress
-- **GOF + erank reg ** 
+- **GOF + erank reg** 
 
 ## Citation
 If you find this work useful, please consider citing:
