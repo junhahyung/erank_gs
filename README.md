@@ -1,7 +1,7 @@
 # Effective Rank Analysis and Regularization for Enhanced 3D Gaussian Splatting (Neurips'24)
 
 
-This repository contains the implementation of **Effective Rank Analysis and Regularization for Enhanced 3D Gaussian Splatting**, accepted at **NeurIPS 2024**. Our work investigates the role of effective rank in 3D Gaussian splatting and proposes novel regularization techniques to enhance its performance.
+This repository contains the implementation of **Effective Rank Analysis and Regularization for Enhanced 3D Gaussian Splatting**.
 
 ## Getting Started
 
