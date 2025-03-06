@@ -346,9 +346,6 @@ def training(dataset, opt, pipe, exp_name, test_freq, saving_iterations, checkpo
         Ll1 = l1_loss(image, gt_image)
         recon_loss = (1.0 - opt.lambda_dssim) * Ll1 + opt.lambda_dssim * (1.0 - ssim(image, gt_image))
 
-        o = render_pkg['render_opacity']
-        image_mask = viewpoint_cam.image_mask
-        opacity_mask_loss = -(image_mask * torch.log(o) + (1-image_mask) * torch.log(1 - o)).mean()
 
         erank_loss = 0
         thin_loss = 0
@@ -359,8 +356,14 @@ def training(dataset, opt, pipe, exp_name, test_freq, saving_iterations, checkpo
 
             thin_loss = opt.thin_lambda*ordered_scale[:,2].mean()
 
+        loss = recon_loss + erank_loss + thin_loss
 
-        loss = recon_loss + erank_loss + thin_loss + opacity_mask_loss 
+        image_mask = viewpoint_cam.image_mask
+        if image_mask:
+            o = render_pkg['render_opacity']
+            opacity_mask_loss = -(image_mask * torch.log(o) + (1-image_mask) * torch.log(1 - o)).mean()
+            loss += opacity_mask_loss 
+
         loss.backward()
 
         iter_end.record()
