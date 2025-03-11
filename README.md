@@ -31,11 +31,12 @@ bash train.sh
 ## Citation
 If you find this work useful, please consider citing:
 ```bibtex
-@article{hyung2024effective,
-  title={Effective rank analysis and regularization for enhanced 3d gaussian splatting},
-  author={Hyung, Junha and Hong, Susung and Hwang, Sungwon and Lee, Jaeseong and Choo, Jaegul and Kim, Jin-Hwa},
-  journal={arXiv preprint arXiv:2406.11672},
-  year={2024}
+@inproceedings{hyung2024effective,
+  title={Effective Rank Analysis and Regularization for Enhanced 3D Gaussian Splatting},
+  author={HYUNG, JUNHA and Hong, Susung and Hwang, Sungwon and Lee, Jaeseong and Kim, Jin-Hwa and Choo, Jaegul},
+  booktitle={Conference on Neural Information Processing Systems (NeurIPS)},
+  year={2024},
+  organization={Conference on Neural Information Processing Systems (NeurIPS)}
 }
 ```
 
