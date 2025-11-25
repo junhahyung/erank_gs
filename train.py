@@ -359,7 +359,7 @@ def training(dataset, opt, pipe, exp_name, test_freq, saving_iterations, checkpo
         loss = recon_loss + erank_loss + thin_loss
 
         image_mask = viewpoint_cam.image_mask
-        if image_mask:
+        if image_mask is not None:
             o = render_pkg['render_opacity']
             opacity_mask_loss = -(image_mask * torch.log(o) + (1-image_mask) * torch.log(1 - o)).mean()
             loss += opacity_mask_loss 
