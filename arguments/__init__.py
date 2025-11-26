@@ -92,7 +92,6 @@ class OptimizationParams(ParamGroup):
         #self.erank_target = '1-3'
         self.erank_from_iter = 0
         self.erank_end_iter = self.iterations
-        self.reg_from_iter = 15000
         self.thin_lambda = 0.
         self.normal_align_lambda = 0.
 
